@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C language</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        .data {
+            display: grid;
+            grid-template-columns: 200px auto;
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .foot {
+            border: 0px solid black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #sidebar {
+            background-color: rgb(236 230 243);
+            overflow: auto;
+            grid-row-start: 1;
+            grid-row-end: -1;
+            z-index: -1;
+
+        }
+
+        #sidebar a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            list-style: none;
+            color: inherit;
+        }
+
+        #content {
+            background-color: #ffffff;
+            z-index: -1;
+            grid-row: 1/-1;
+        }
+
+        .head {
+            margin-top: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .para {
+            margin: 15px;
+        }
+
+        .points {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            position: relative;
+            padding-left: 100px;
+        }
+
+        .demo {
+            background-color: rgb(20, 19, 19);
+            position: relative;
+            width: 500px;
+            padding: 10px;
+            margin-left: 100px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav"></div>
+    <div class="data">
+        <div id="sidebar">
+            <a href="#contact"> - Home</a>
+         
+        </div>
+        <div id="content">
+            <H1 class="head">PHP Tutorial</H1>
+            <p class="para">The PHP Hypertext Preprocessor (PHP) is a programming language that allows web developers to
+                create dynamic content that interacts with databases. PHP is basically used for developing web based
+                software applications. This tutorial helps you to build your base with PHP.</p>
+            <h1 class="head">Why to Learn PHP</h1>
+            <p class="para">PHP started out as a small open source project that evolved as more and more people found
+                out how useful it was. Rasmus Lerdorf unleashed the first version of PHP way back in 1994.
+
+                PHP is a MUST for students and working professionals to become a great Software Engineer specially when
+                they are working in Web Development Domain. I will list down some of the key advantages of learning PHP:
+            </p>
+            <p>
+            <ul class="points">
+                <li>PHP is a recursive acronym for "PHP: Hypertext Preprocessor".</li>
+                <li>PHP Syntax is C-Like.</li>
+                <li>PHP is forgiving: PHP language tries to be as forgiving as possible.</li>
+                <li>It is integrated with a number of popular databases, including MySQL, PostgreSQL, Oracle, Sybase,
+                    Informix, and Microsoft SQL Server.</li>
+                <li>PHP is a server side scripting language that is embedded in HTML. It is used to manage dynamic
+                    content, databases, session tracking, even build entire e-commerce sites.</li>
+            </ul>
+            </p>
+            <h1 class="head">Facts about PHP</h1>
+            <p>
+            <ul class="points">
+                <li>The mascot of PHP is a big blue elephant.</li>
+                <li>‘Personal Home Page’ is the original name of PHP.</li>
+                <li>Today, PHP is recognized as “PHP: Hypertext Preprocessor, ”</li>
+                <li>For PHP, there are no written specifications or standards.</li>
+                <li>The famous PHP projects or frameworks are :Symfony, Laravel, CodeIgniter, Faker.</li>
+                <li>Procedural programming, object oriented programming and also a mixture of them are used by PHP.</li>
+            </ul>
+            </p>
+            <h1 class="head">Hello World Program in PHP</h1>
+           
+            <div class="demo">
+                <pre class="code">
+                    <!-- #include&lt;stdio.h&gt;
+                    int main() {
+                       /* my first program in C */
+                       printf("Hello, World! \n");
+                       
+                       return 0;
+                    } -->
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Hello World&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;?php echo "Hello, World!";?&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+            </div>
+            <footer class="foot"> THIS IS A FOOTER </footer>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    $(function () {
+        $("#nav").load("navbar.html");
+    });
+</script>
+
+</html
